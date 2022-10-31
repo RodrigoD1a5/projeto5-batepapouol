@@ -14,49 +14,11 @@
         <img src="./imagens/logo 1.png"/>
         <img src="./imagens/Vector.png"/>
     </div>
-    <ul class="chat">
-        <li class="texto status">
-            <p>
-                <span class="horário">(09:21:45)</span>  
-                <span class="nome">João</span> 
-                <span class="status1">entra na sala...</span>
-            </p>
-        </li>
-        <li class="texto mensagem">
-            <p>
-                <span class="horário">(09:21:45)</span>  
-                <span class="nome">João</span> para 
-                <span class="nome">Todos</span>: 
-                <span class="mensagem1">Bom dia</span>
-            </p>
-        </li>
-        <li class="texto mensagem">
-            <p>
-                <span class="horário">(09:21:45)</span>  
-                <span class="nome">Maria</span> para 
-                <span class="nome">João</span>: 
-                <span class="mensagem1">Oi João :)</span>
-            </p>
-        </li>
-        <li class="texto reservado">
-            <p>
-                <span class="horário">(09:21:45)</span>  
-                <span class="nome">João</span> reservadamente para 
-                <span class="nome">Maria</span>: 
-                <span class="mensagem1">Oi gatinha quer tc?</span>
-            </p>
-        </li>
-        <li class="texto status">
-            <p>
-                <span class="horário">(09:21:45)</span>  
-                <span class="nome">Maria</span> 
-                <span class="status1">sai da sala...</span>
-            </p>
-        </li>
+    <ul class="bate-papo">
     </ul>
     <div class="caixa-envio">
         <input placeholder="Escreva aqui..." type="text" />
-        <img src="./imagens/Vector1.png" class="enviar"></img>
+        <img src="./imagens/Vector1.png" class="enviar" onclick="enviarMensagem()" ></img>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./scripts.js"></script>
