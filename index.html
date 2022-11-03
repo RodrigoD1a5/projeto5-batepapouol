@@ -17,11 +17,10 @@
     <ul class="bate-papo">
     </ul>
     <div class="caixa-envio">
-        <input placeholder="Escreva aqui..." type="text" />
-        <img src="./imagens/Vector1.png" class="enviar" onclick="enviarMensagem()" ></img>
+        <input data-test="input-message" placeholder="Escreva aqui..." type="text" />
+        <img src="./imagens/Vector1.png" class="enviar" onclick="enviarMensagem()" data-test="send-message" ></img>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./scripts.js"></script>
 </body>
-
 </html>

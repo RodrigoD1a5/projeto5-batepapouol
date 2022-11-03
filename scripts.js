@@ -39,7 +39,7 @@ function carregarMensagens(mensagens){
     const listaDeMensagens = mensagens;
     for(let i=0 ; i < listaDeMensagens.length ; i++){
         if ( listaDeMensagens[i].type === "status"){
-            document.querySelector(".bate-papo").innerHTML+=`<li class="texto status">
+            document.querySelector(".bate-papo").innerHTML+=`<li class="texto status" data-test="message">
             <p>
                 <span class="horário">(${listaDeMensagens[i].time})</span>  
                 <span class="nome">${listaDeMensagens[i].from}</span> 
@@ -48,7 +48,7 @@ function carregarMensagens(mensagens){
             </li>`
         }
         else if (listaDeMensagens[i].type === "message"){
-            document.querySelector(".bate-papo").innerHTML+=`<li class="texto mensagem">
+            document.querySelector(".bate-papo").innerHTML+=`<li class="texto mensagem" data-test="message">
             <p>
                 <span class="horário">(${listaDeMensagens[i].time})</span>  
                 <span class="nome">${listaDeMensagens[i].from}</span> para 
@@ -59,7 +59,7 @@ function carregarMensagens(mensagens){
 
         }
         else if (listaDeMensagens[i].to === "nomeUsuario"){
-            document.querySelector(".bate-papo").innerHTML+=`<li class="texto reservado">
+            document.querySelector(".bate-papo").innerHTML+=`<li class="texto reservado" data-test="message">
             <p>
                 <span class="horário">(${listaDeMensagens[i].time})</span>  
                 <span class="nome">${listaDeMensagens[i].from}</span> reservadamente para 
